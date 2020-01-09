@@ -75,16 +75,24 @@ venv3/
 .vscode/
 #--
 
-git add .
+git add .flaskenv .gitignore app_dir_package/ config.py flask.txt microblog.py
+
 git commit -m "Initial commit"
 
 # create remote repository
 https://github.com/ggoldsch/    # george.goldschmied@verizon.net
 # create new repository: django_projects
 # Public, do not initialize, do not add .gitignore, or license
-git remote add origin https://github.com/ggoldsch/django_projects.git
 
+git remote add origin https://github.com/ggoldsch/flask_microblog.git
 git push -u origin master
+
 Username for 'https://github.com': ggoldsch
 Password for 'https://ggoldsch@github.com': 
+
+vi README.md
+From:
+https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
+Many Thanks!
+#--
 ###########################
