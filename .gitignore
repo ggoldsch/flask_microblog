@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.env
+venv/
+venv3/
+# SQLite database files
+*.sqlite3 
+*.swp
+.vscode/

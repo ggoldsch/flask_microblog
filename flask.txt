@@ -1,0 +1,90 @@
+#
+vi .vimrc
+set tabstop     =4
+set softtabstop =4
+set shiftwidth  =4
+set expandtab
+#--
+#
+https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
+
+ggoldsch@DESKTOP-KNM2M30:~/flask_microblog$ pwd
+/home/ggoldsch/flask_microblog
+
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo apt-get install python3-venv
+
+python3 -m venv venv3
+source venv3/bin/activate
+(venv3) ggoldsch@DESKTOP-KNM2M30:~/flask_microblog$ 
+
+(venv3) ggoldsch@DESKTOP-KNM2M30:~/flask_microblog$ 
+pip install flask
+pip install python-dotenv   # for .flaskenv support
+pip install flask-wtf       # Flask forms extension
+
+
+(venv3) ggoldsch@DESKTOP-KNM2M30:~/flask_microblog$ 
+
+vi .flaskenv
+FLASK_APP=microblog.py
+FLASK_ENV=development   <== to enable auto reload if code changes
+#--
+
+vi microblog.py
+from app_dir_package import app
+#--
+
+mkdir app_dir_package
+
+code .
+
+
+(venv3) ggoldsch@DESKTOP-KNM2M30:~/flask_microblog$ 
+flask run
+
+http://localhost:5000/
+
+
+
+###########################
+# github.com
+(venv3) ggoldsch@DESKTOP-KNM2M30:~/flask_microblog$ pwd
+/home/ggoldsch/flask_microblog
+
+git config --global user.name   george goldschmied
+git config --global user.email  george.goldschmied@verizon.net
+git config --global --list
+user.email=george.goldschmied@verizon.net
+user.name=george goldschmied
+
+git init
+git status
+
+vi .gitignore   # create .gitignore file
+__pycache__/
+*.py[cod]
+.env
+venv/
+venv3/
+# SQLite database files
+*.sqlite3
+*.swp
+.vscode/
+#--
+
+git add .
+git commit -m "Initial commit"
+
+# create remote repository
+https://github.com/ggoldsch/    # george.goldschmied@verizon.net
+# create new repository: django_projects
+# Public, do not initialize, do not add .gitignore, or license
+git remote add origin https://github.com/ggoldsch/django_projects.git
+
+git push -u origin master
+Username for 'https://github.com': ggoldsch
+Password for 'https://ggoldsch@github.com': 
+###########################

@@ -1,0 +1,1 @@
+from app_dir_package import app
