@@ -24,6 +24,11 @@ source venv3/bin/activate
 pip install flask
 pip install python-dotenv   # for .flaskenv support
 pip install flask-wtf       # Flask forms extension
+pip install flask-sqlalchemy  # Flask SQL ORM wrapper
+pip install flask-migrate   # DB migrations
+pip install pylint_flask_sqlalchemy # https://github.com/PyCQA/pylint/issues/1973
+    And in your settings.json of VisualCode
+    "python.linting.pylintArgs": ["--load-plugins", "pylint_flask_sqlalchemy"]
 
 
 (venv3) ggoldsch@DESKTOP-KNM2M30:~/flask_microblog$ 
