@@ -112,6 +112,9 @@ Many Thanks!
 flask db init       # Creates "migrations" Dir, and ...
 git add migrations
 
+flask db migrate -m "users table"
+git add app.db migrations/versions/
+
 
 
 
