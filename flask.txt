@@ -5,6 +5,12 @@ set softtabstop =4
 set shiftwidth  =4
 set expandtab
 #--
+vi bashrc
+set -o vi
+#--
+vi .profile
+export DISPLAY=0:0
+#---
 #
 https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
 
@@ -27,7 +33,7 @@ pip install flask-wtf       # Flask forms extension
 pip install flask-sqlalchemy  # Flask SQL ORM wrapper
 pip install flask-migrate   # DB migrations
 pip install pylint_flask_sqlalchemy # https://github.com/PyCQA/pylint/issues/1973
-    And in your settings.json of VisualCode
+    And in your settings.json of VisualCode (VSC lower left Menu - Gear)
     "python.linting.pylintArgs": ["--load-plugins", "pylint_flask_sqlalchemy"]
 
 
@@ -101,3 +107,12 @@ https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
 Many Thanks!
 #--
 ###########################
+
+(venv3) ggoldsch@DESKTOP-KNM2M30:~/flask_microblog$ 
+flask db init       # Creates "migrations" Dir, and ...
+git add migrations
+
+
+
+
+
