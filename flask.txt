@@ -119,6 +119,8 @@ flask db upgrade                    # updates (migrates) DB
 flask db migrate -m "posts table"
 flask db upgrade
 
+(venv3) ggoldsch@DESKTOP-KNM2M30:~/flask_microblog$ 
+flask shell
 
 
 
