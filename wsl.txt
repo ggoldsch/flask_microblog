@@ -1,0 +1,29 @@
+# Developing on Windows with wsl2:w
+
+https://www.youtube.com/watch?v=A0eqZujVfYU
+
+# Nick Janetakis wsl tmux
+https://www.youtube.com/watch?v=5gu8wWX3Ob4
+
+# Docker - how to build a Twelve-Factor Drupal app
+https://www.youtube.com/watch?v=FiaLKwdv9TI
+
+# Docker - tech preview install
+https://www.docker.com/blog/5-things-docker-desktop-wsl2-tech-preview/
+https://docs.docker.com/docker-for-windows/wsl-tech-preview/
+
+PS C:\Users\ggoldsch> wsl -l -v
+  NAME            STATE           VERSION
+* Ubuntu-18.04    Running         1
+PS C:\Users\ggoldsch> wsl --set-version Ubuntu-18.04 2
+
+Set-VMProcessor -VMName win10insider -ExposeVirtualizationExtensions $true
+https://aka.ms/wsl2-install
+https://docs.microsoft.com/en-us/windows/wsl/wsl2-install
+# run powershell as administrator
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+# Visual Studio Code remote
+https://code.visualstudio.com/docs/remote/wsl
+
